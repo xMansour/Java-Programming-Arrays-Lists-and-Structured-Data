@@ -5,11 +5,11 @@ You can find this course [here](https://www.coursera.org/learn/java-programming-
 
 
 ## Week 1
-In this week you will learn about arrays and how to use them. You will also learn about cryptography and how important it is and you will implement the Caeser Cipher cryptography algorithm. You will learn how to encrypt, decrypt using keys or drcrypt without keys by calculating the most common litter index which is suppose to be 'e' and calculate the key then decrypt the input. You will learn about how to make the Caeser Cipher using two keys and breaking it as well.
+... In this week you will learn about arrays and how to use them. You will also learn about cryptography and how important it is and you will implement the Caeser Cipher cryptography algorithm. You will learn how to encrypt, decrypt using keys or drcrypt without keys by calculating the most common litter index which is suppose to be 'e' and calculate the key then decrypt the input. You will learn about how to make the Caeser Cipher using two keys and breaking it as well. .⋅⋅
 
-You will learn about the StringBuilder class and how it is mutable unlike the normal String class which is immutable which can't be changed once created.
+... You will learn about the StringBuilder class and how it is mutable unlike the normal String class which is immutable which can't be changed once created. .⋅⋅
 
-###### StringBuilder class usage:
+#### StringBuilder class usage:
 ```java
 StringBuilder sb = new StringBuilder();
 
@@ -23,7 +23,7 @@ sb.toString();                 //returns the StringBuilder object as a string
 
 You will also learn about the Character class 
 
-###### Character class usage:
+#### Character class usage:
 ```java
 Character.isLowerCase(inputChar);       //returns ture if the character is lower case
 Character.isUpperCase(inputChar);       //returns ture if the character is upper case
@@ -36,44 +36,44 @@ Character.isLetter(inputChar);          //returns ture if the character is a let
 
 
 #### This week will also introduce some basic OOP concepts like:
-**Class** is a type.
-**Object** is an instance of that class (type). It contains **Code** and **Data**.
-**Code** represents the methods inside the object.
-**Data** represents the fields of the object.
+... **Class** is a type. .⋅⋅
+... **Object** is an instance of that class (type). It contains **Code** and **Data**. .⋅⋅
+... **Code** represents the methods inside the object. .⋅⋅
+... **Data** represents the fields of the object. .⋅⋅
 
-###### Encapsulation:
+#### Encapsulation:
 The code(methods) and the data are logically inside of the object and the method acts on the data inside the object.
 
-###### Design Principles:
+#### Design Principles:
 | Type          | Naming Convention | Description  |
-| ------------- |:-------------:| -----:|
+|: ------------- :|:-------------:| :-----:|
 | Class     | Noun | Should describe things |
 | Method      | Verbs  | Sometimes they aren't like substring() or indexOf(). These methods describe actions |
 | Fields | Noun      | Should describe things the class has, sometimes it could be Adjectives to describe properties |
 
-###### Visibility Modifiers:
--Public                 Any class in any package can access these methods or fields
--Protected              Any class in the same package or a sub class from another package can access these methods or fields
--Default(Not written)   Any class in the same package can access these methods or fields.
--Private                Only the class in which these methods or fields are defined has access to them
+#### Visibility Modifiers:
+- Public                 Any class in any package can access these methods or fields
+- Protected              Any class in the same package or a sub class from another package can access these methods or fields
+- Default(Not written)   Any class in the same package can access these methods or fields.
+- Private                Only the class in which these methods or fields are defined has access to them
 
 >If you try to access a private method or field from another class you will get ```fieldName has private access in className``` error
 
-###### Abstraction:
-The seperation of the **interface**(what it does) and the **implementation**(how it does it).
-**Interface** should be public.
-**Implementation** should be private.
+#### Abstraction:
+... The seperation of the **interface**(what it does) and the **implementation**(how it does it). .⋅⋅
+... **Interface** should be public. .⋅⋅
+... **Implementation** should be private. .⋅⋅
 
-Fields should be private since they are a part of the implementation.
-Methods depends of the purpose of it. If the method represents what the object does, it should be public. And if it is a helper method it should be private.
+... Fields should be private since they are a part of the implementation. .⋅⋅
+... Methods depends of the purpose of it. If the method represents what the object does, it should be public. And if it is a helper method it should be private. .⋅⋅
 
-###### Constructos:
--Should have the same name as the class
--Should have no return type not even **void**
--Should be used to initialize the fields of the class
--They aren't called directly
--They are called when creating an object with the keyword **new**
--When there is no constructor, java provides a default one with no parameters and no body
+#### Constructos:
+- Should have the same name as the class
+- Should have no return type not even **void**
+- Should be used to initialize the fields of the class
+- They aren't called directly
+- They are called when creating an object with the keyword **new**
+- When there is no constructor, java provides a default one with no parameters and no body
 ```java
 Public className(){}
 ```

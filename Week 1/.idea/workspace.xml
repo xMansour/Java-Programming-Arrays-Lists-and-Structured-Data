@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64dae170-f1c1-4300-8a1a-9584890ce543" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week 1/CeaserBreaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Week 1/CeaserCipher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CeaserBreaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaesarBreaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CeaserCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaesarCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datasets/encrypted1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/datasets/encrypted1.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,30 +16,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="50" />
-              <folding>
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="525">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/datasets/encrypted1.txt">
+        <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="372" lean-forward="true" selection-start-line="6" selection-start-column="372" selection-end-line="6" selection-end-column="372" />
+            <state relative-caret-position="218">
+              <caret line="63" column="76" lean-forward="true" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+              <folding>
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,6 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -120,11 +107,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550181118173" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550181506543" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/libararies/courserajava.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -244,14 +230,20 @@
       <option name="project" value="LOCAL" />
       <updated>1550162184800</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Week 1, Assignment 3, Part 1 &amp; 2.">
+      <created>1550181185727</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550181185727</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.5348485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5348485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -260,7 +252,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4155039" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4155039" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,34 +270,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32868218" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -323,7 +287,8 @@
     <MESSAGE value="Week 1, Assignment 2, Part 1. WordLengths." />
     <MESSAGE value="Week 1, Assignment 2, Part 2. Breaking Ceaser Cipher." />
     <MESSAGE value="Week 1, Assignment 2, Part 2. Breaking Ceaser Cipher. Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 1, Assignment 2, Part 2. Breaking Ceaser Cipher. Fix" />
+    <MESSAGE value="Week 1, Assignment 3, Part 1 &amp; 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 1, Assignment 3, Part 1 &amp; 2." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -456,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -470,21 +428,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="59" column="55" lean-forward="true" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="50" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datasets/encrypted1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="372" lean-forward="true" selection-start-line="6" selection-start-column="372" selection-end-line="6" selection-end-column="372" />
+          <caret line="6" column="372" selection-start-line="6" selection-start-column="372" selection-end-line="6" selection-end-column="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OOCaesarCipherTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="63" column="76" lean-forward="true" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,6 +20,7 @@ sb.setCharAt(index, input);    //replaces the character at the specified index b
 sb.toString();                 //returns the StringBuilder object as a string
 
 ```
+---
 
 You will also learn about the Character class 
 
@@ -34,6 +35,7 @@ Character.isAlphabet(inputChar);        //returns ture if the character is an al
 Character.isLetter(inputChar);          //returns ture if the character is a letter
 ```
 
+---
 
 #### This week will also introduce some basic OOP concepts like:
 **Class** is a type.  
@@ -41,12 +43,16 @@ Character.isLetter(inputChar);          //returns ture if the character is a let
 **Code** represents the methods inside the object.  
 **Data** represents the fields of the object.  
 
+---
+
 #### Encapsulation:
 The code(methods) and the data are logically inside of the object and the method acts on the data inside the object.
 
+---
+
 #### Design Principles:
 | Type          | Naming Convention | Description  |
-| ------------- |:-------------:| :-----:|
+| ------------- |:-------------:| :-----|
 | Class     | Noun | Should describe things |
 | Method      | Verbs  | Sometimes they aren't like substring() or indexOf(). These methods describe actions |
 | Fields | Noun      | Should describe things the class has, sometimes it could be Adjectives to describe properties |
@@ -59,6 +65,8 @@ The code(methods) and the data are logically inside of the object and the method
 
 >If you try to access a private method or field from another class you will get ```fieldName has private access in className``` error
 
+---
+
 #### Abstraction:
 The seperation of the **interface**(what it does) and the **implementation**(how it does it).  
 **Interface** should be public.  
@@ -66,6 +74,8 @@ The seperation of the **interface**(what it does) and the **implementation**(how
 
 Fields should be private since they are a part of the implementation.  
 Methods depends of the purpose of it. If the method represents what the object does, it should be public. And if it is a helper method it should be private.  
+
+---
 
 #### Constructos:
 - Should have the same name as the class

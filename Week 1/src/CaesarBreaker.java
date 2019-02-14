@@ -1,10 +1,10 @@
 import edu.duke.FileResource;
 
-public class CeaserBreaker {
+public class CaesarBreaker {
     public static void main(String[] args) {
-        CeaserBreaker ceaserBreaker = new CeaserBreaker();
-        //ceaserBreaker.testDecrypt();
-        ceaserBreaker.testDecryptTwoKeys();
+        CaesarBreaker caesarBreaker = new CaesarBreaker();
+        //caesarBreaker.testDecrypt();
+        caesarBreaker.testDecryptTwoKeys();
 
 
     }
@@ -14,14 +14,14 @@ public class CeaserBreaker {
     // you wrote for the last lesson. Make sure that your CaesarCipher class is in the same folder as CaesarBreaker!
     // You may want to use the following code as part of your decrypt method.
     public String decrypt(String encrypted) {
-        CeaserCipher ceaserCipher = new CeaserCipher();
+        CaesarCipher caesarCipher = new CaesarCipher();
         int[] freqs = countLetters(encrypted);
         int maxDex = maxIndex(freqs);
         int dKey = maxDex - 4;
         if (maxDex < 4)
             dKey = 26 - (4 - maxDex);
 
-        return ceaserCipher.encrypt(encrypted, 26 - dKey);
+        return caesarCipher.encrypt(encrypted, 26 - dKey);
     }
 
     public void testDecrypt() {
@@ -93,8 +93,8 @@ public class CeaserBreaker {
         int dKey1 = getKey(firstPart);
         int dKey2 = getKey(secondPart);
         System.out.println("Key 1: " + dKey1 + " Key 2: " + dKey2);
-        CeaserCipher ceaserCipher = new CeaserCipher();
-        System.out.println(ceaserCipher.encryptTwoKeys(encrypted, 26 - dKey1, 26 - dKey2));
+        CaesarCipher caesarCipher = new CaesarCipher();
+        System.out.println(caesarCipher.encryptTwoKeys(encrypted, 26 - dKey1, 26 - dKey2));
     }
 
     public void testDecryptTwoKeys() {

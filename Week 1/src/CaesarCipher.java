@@ -1,10 +1,8 @@
-import edu.duke.FileResource;
-
-public class CeaserCipher {
+public class CaesarCipher {
     public static void main(String[] args) {
-        CeaserCipher ceaserCipher = new CeaserCipher();
-        //ceaserCipher.testEncrypt();
-        ceaserCipher.testEncryptTwoKeys();
+        CaesarCipher caesarCipher = new CaesarCipher();
+        //caesarCipher.testEncrypt();
+        caesarCipher.testEncryptTwoKeys();
     }
 
     //Write the method encrypt that has two parameters, a String named input and an int named key.

@@ -99,7 +99,7 @@ public class CeaserBreaker {
 
     public void testDecryptTwoKeys() {
         FileResource fileResource = new FileResource("datasets/encrypted1.txt");
-        decryptTwoKeys(fileResource.toString());
+        decryptTwoKeys(fileResource.asString());
     }
 
 }

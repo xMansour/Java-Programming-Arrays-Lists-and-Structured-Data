@@ -77,13 +77,27 @@ public class CharacterNames {
 
     }
 
+    public int findMax() {
+        int max = freqs.get(0);
+        int maxIndex = 0;
+        for (int k = 0; k < freqs.size(); k++) {
+            if (freqs.get(k) > max) {
+                max = freqs.get(k);
+                maxIndex = k;
+            }
+        }
+        return maxIndex;
+    }
+
 
     public void tester() {
         findAllCharacters();
         for (int i = 0; i < namesList.size(); i++) {
             System.out.println(namesList.get(i) + " " + freqs.get(i));
         }
-        charactersWithNumParts(1, 2);
+        int maxIndex = findMax();
+        System.out.println("The main character: " + namesList.get(maxIndex) + " " + freqs.get(maxIndex));
+        charactersWithNumParts(10, 15);
     }
 
 

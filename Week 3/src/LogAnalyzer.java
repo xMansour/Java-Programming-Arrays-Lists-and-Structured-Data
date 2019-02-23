@@ -36,6 +36,50 @@ public class LogAnalyzer {
         }
     }
 
+    public int countUniqueIPs() {
+        ArrayList<String> uniqueIps = new ArrayList<>();
+
+        for (LogEntry logEntry : records) {
+            String ip = logEntry.getIpAddress();
+            if (!uniqueIps.contains(ip)) {
+                uniqueIps.add(ip);
+            }
+        }
+
+        return uniqueIps.size();
+    }
+
+    public void printAllHigherThanNum(int num) {
+        for (LogEntry logEntry : records) {
+            if (logEntry.getStatusCode() > num) {
+                System.out.println(logEntry);
+            }
+        }
+    }
+
+
+    public ArrayList<String> uniqueIPVisitsOnDay(String someday) {
+        ArrayList<String> ips = new ArrayList<>();
+        for (LogEntry logEntry : records) {
+            if (logEntry.getAccessTime().toString().contains(someday)) {
+                ips.add(logEntry.getIpAddress());
+            }
+
+        }
+
+        return ips;
+    }
+
+    public int countUniqueIPsInRange(int low, int high) {
+        int numberOfIps = 0;
+        for (LogEntry logEntry : records) {
+            if (logEntry.getStatusCode() > low && logEntry.getStatusCode() < high) {
+                numberOfIps++;
+            }
+        }
+
+        return numberOfIps;
+    }
 
 
 }

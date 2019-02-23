@@ -1,7 +1,9 @@
 import edu.duke.FileResource;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 
 /**
  * In the LogAnalyzer class you will need to complete the constructor to initialize records to an empty ArrayList
@@ -82,4 +84,82 @@ public class LogAnalyzer {
     }
 
 
+    public HashMap<String, Integer> countVisitsPerIp() {
+        HashMap<String, Integer> counts = new HashMap<>();
+        for (LogEntry logEntry : records) {
+            if (counts.containsKey(logEntry.getIpAddress())) {
+                counts.put(logEntry.getIpAddress(), counts.get(logEntry.getIpAddress()) + 1);
+            } else {
+                counts.put(logEntry.getIpAddress(), 1);
+            }
+        }
+
+        return counts;
+    }
+
+
+    public int mostNumberVisitsByIP(HashMap<String, Integer> map) {
+        int max = 0;
+        for (int value : map.values()) {
+            if (max < value)
+                max = value;
+
+        }
+        return max;
+    }
+
+
+    public ArrayList<String> iPsMostVisits(HashMap<String, Integer> map) {
+        ArrayList<String> ips = new ArrayList<>();
+        int max = mostNumberVisitsByIP(map);
+        for (String ip : map.keySet()) {
+            if (map.get(ip) >= max)
+                ips.add(ip);
+        }
+
+        return ips;
+    }
+
+
+    public HashMap<String, ArrayList<String>> iPsForDays() {
+        HashMap<String, ArrayList<String>> map = new HashMap<>();
+
+        for (LogEntry logEntry : records) {
+            String date = logEntry.getAccessTime().toString();
+            if (map.containsKey(date)) {
+                ArrayList<String> ips = new ArrayList<>();
+                ips.add(logEntry.getIpAddress());
+                map.put(date, ips);
+            } else {
+                map.get(date).add(logEntry.getIpAddress());
+            }
+        }
+
+        return map;
+    }
+
+    public String dayWithMostIPVisits(HashMap<String, ArrayList<String>> map) {
+        int max = 0;
+        String mostVisitedDay = null;
+        for (String date : map.keySet()) {
+            if (map.get(date).size() > max) {
+                max = map.get(date).size();
+                mostVisitedDay = date;
+            }
+        }
+        return mostVisitedDay;
+    }
+
+    public ArrayList<String> iPsWithMostVisitsOnDay(HashMap<String, ArrayList<String>> map, String date) {
+        ArrayList<String> ips = map.get(date);
+        HashMap<String, Integer> counts = new HashMap<>();
+        for (String iP : ips) {
+            if (!counts.containsKey(iP)) {
+                counts.put(iP, 1);
+            } else {
+                counts.put(iP, counts.get(iP) + 1);
+            }
+        }
+        return iPsMostVisits(counts);
+    }
 }

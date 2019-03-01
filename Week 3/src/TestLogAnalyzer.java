@@ -14,10 +14,11 @@ public class TestLogAnalyzer {
     private static void testUniqueIP() {
         LogAnalyzer logAnalyzer = new LogAnalyzer();
         logAnalyzer.readFile("datasets/small_log.txt");
-        System.out.println("Number of Unique ips: " + logAnalyzer.countUniqueIPs());
-        logAnalyzer.printAllHigherThanNum(200);
-        System.out.println(logAnalyzer.uniqueIPVisitsOnDay("Sep 30").size());
-        System.out.println(logAnalyzer.countUniqueIPsInRange(100, 300));
+        //System.out.println("Number of Unique ips: " + logAnalyzer.countUniqueIPs());
+        //logAnalyzer.printAllHigherThanNum(200);
+        //System.out.println(logAnalyzer.uniqueIPVisitsOnDay("Sep 30").size());
+        //System.out.println(logAnalyzer.countUniqueIPsInRange(100, 300));
+        logAnalyzer.countVisitsPerIp();
     }
 
 

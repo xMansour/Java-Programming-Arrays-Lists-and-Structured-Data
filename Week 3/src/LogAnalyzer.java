@@ -126,7 +126,7 @@ public class LogAnalyzer {
 
         for (LogEntry logEntry : records) {
             String date = logEntry.getAccessTime().toString();
-            if (map.containsKey(date)) {
+            if (!map.containsKey(date)) {
                 ArrayList<String> ips = new ArrayList<>();
                 ips.add(logEntry.getIpAddress());
                 map.put(date, ips);
